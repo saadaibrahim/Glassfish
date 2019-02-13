@@ -1,9 +1,12 @@
 # Glassfish
-Tutorial for Glassfish Subject
-# test C1 un changement
-Pour mes auditeurs et tester les pages github
+Glassfish Tutorial
 
-# un autre titre 
+# Audience
+This tutorial is intended for programmers interested in developing and deploying Java EE 7 applications. It covers the technologies comprising the Java EE platform and describes how to develop Java EE components and deploy them on the Java EE Software Development Kit (SDK).
+
+# Pre-requisites
+Before proceeding with this tutorial, make sure all hardware and software requirements are met then install Glassfish.
+[Installation Guide](https://docs.oracle.com/cd/E26576_01/doc.312/e24935/installing.htm#GSING00002)
 
 ## h2
 
