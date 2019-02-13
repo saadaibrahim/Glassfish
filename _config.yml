@@ -1,4 +1,4 @@
-remote_theme: ISSAE/glassfish
+remote_theme: ISSAE/architect
 
 name: GlassFish
 
@@ -8,3 +8,4 @@ author_email: saada.ibrahim@isae.edu.lb
 
 title: The GlassFish Application - A must-have for anyone
 google_analytics: UA-29708002-2
+repository: ISSAE/Glassfish
