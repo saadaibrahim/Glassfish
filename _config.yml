@@ -1,0 +1,13 @@
+remote_theme: ISSAE/glassfish
+
+name: GlassFish
+
+author: Saada Ibrahim
+
+author_email: saada.ibrahim@isae.edu.lb
+
+title: The GlassFish Application - A must-have for anyone
+google_analytics: UA-29708002-2
+
+plugins:
+  - jekyll-sitemap
