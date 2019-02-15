@@ -10,9 +10,9 @@ Before proceeding with this tutorial, make sure all hardware and software requir
 [Download Glassfish](https://javaee.github.io/glassfish/download)
 
 ## GlassFish Documentation
-GlassFish documentation: There is plenty of documentation which will help you to get started or to continue with using GlassFish.\n
-Some of the most important:
-GlassFish tech tips master index:
+GlassFish documentation: There is plenty of documentation which will help you to get started or to continue with using GlassFish.<br />
+Some of the most important:  
+GlassFish tech tips master index:  
  [Link](https://glassfish.dev.java.net/public/TipsandBlogs.html)
  
 GlassFish Wiki:
@@ -26,7 +26,7 @@ GlassFish Wiki:
 	1. Launch NetBeans IDE.
 	2. File --> New Project -- > Java EE --> Enterprise Application
 	3. ProjectName: HelloWorld
-	
+	![alt text](ISSAE/GlassFish/PIC1.PNG)
 	4. Expand HelloWorld-war and under SourcePackages create a new Servlet using below sample piece of code
 	
 ```java
