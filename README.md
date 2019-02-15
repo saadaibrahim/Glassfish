@@ -10,7 +10,7 @@ Before proceeding with this tutorial, make sure all hardware and software requir
 [Download Glassfish](https://javaee.github.io/glassfish/download)
 
 ## GlassFish Documentation
-GlassFish documentation: There is plenty of documentation which will help you to get started or to continue with using GlassFish. 
+GlassFish documentation: There is plenty of documentation which will help you to get started or to continue with using GlassFish.\n
 Some of the most important:
 GlassFish tech tips master index:
  [Link](https://glassfish.dev.java.net/public/TipsandBlogs.html)
@@ -18,8 +18,65 @@ GlassFish tech tips master index:
 GlassFish Wiki:
  [Link](http://wiki.glassfish.java.net/)
  
+## What is GlassFish?
 
-* liste1
+## GlassFish Example: HelloWorld.java
+
+* Start by creating new JAVA EE application:
+	1. Launch NetBeans IDE.
+	2. File --> New Project -- > Java EE --> Enterprise Application
+	3. ProjectName: HelloWorld
+	
+	4. Expand HelloWorld-war and under SourcePackages create a new Servlet using below sample piece of code
+	
+```java
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet(urlPatterns = {"/helloworldservlet"})
+public class helloworldservlet extends HttpServlet {
+
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Hello World </title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Hello World at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
+    }
+ 
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }
+}
+```
+
 * liste2
   * sous lise
   * sous liste2
@@ -32,30 +89,7 @@ GlassFish Wiki:
    1.3 titit
    
    
-```java
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.annotation.WebServlet; 
-import javax.servlet.*;
-import javax.servlet.http.*;
-
-@WebServlet(urlPatterns={"/hello"})
-public class HelloWorld extends HttpServlet {
-
-  
-    public void doGet(HttpServletRequest req, HttpServletResponse res)
-            throws IOException, ServletException {
-        
-        PrintWriter pw = res.getWriter();
-        try {
-			pw.println("Hello World !<br>");
-  		} catch(Exception e) {
-        	e.printStackTrace();
-        }
-    }
-}
-```
 
 > un encadré
 > de plus
