@@ -5,7 +5,7 @@ GlassFish is a Java EE application server which is hosted on Java.net and mainly
 This tutorial is intended for programmers interested in developing and deploying Java EE 7 applications. It covers the technologies comprising the Java EE platform and describes how to develop Java EE components and deploy them on the Java EE Software Development Kit (SDK).
 
 # Pre-requisites
-Before proceeding with this tutorial, make sure all hardware and software requirements are met then install Glassfish.
+Before proceeding with this tutorial, make sure all hardware and software requirements are met then install Glassfish.   
 [Installation Guide](https://docs.oracle.com/cd/E26576_01/doc.312/e24935/installing.htm#GSING00002)   
 [Download Glassfish](https://javaee.github.io/glassfish/download)
 
@@ -25,7 +25,7 @@ GlassFish Wiki:
 	1. Launch NetBeans IDE.
 	2. File --> New Project -- > Java EE --> Enterprise Application
 	3. ProjectName: HelloWorld
-	![PIC1](https://github.com/saadaibrahim/Glassfish/blob/master/PIC1.PNG)
+	![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png
 	4. Expand HelloWorld-war and under SourcePackages create a new Servlet using below sample piece of code
 	
 ```java
