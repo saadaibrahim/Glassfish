@@ -5,7 +5,7 @@ GlassFish is a Java EE application server which is hosted on Java.net and mainly
 This tutorial is intended for programmers interested in developing and deploying Java EE 7 applications. It covers the technologies comprising the Java EE platform and describes how to develop Java EE components and deploy them on the Java EE Software Development Kit (SDK).
 
 # Pre-requisites
-Before proceeding with this tutorial, make sure all hardware and software requirements are met then install Glassfish.   
+Before proceeding with this tutorial, make sure all hardware and software requirements are met then install Glassfish.    
 [Installation Guide](https://docs.oracle.com/cd/E26576_01/doc.312/e24935/installing.htm#GSING00002)   
 [Download Glassfish](https://javaee.github.io/glassfish/download)
 
@@ -29,7 +29,6 @@ GlassFish Wiki:
 	4. Expand HelloWorld-war and under SourcePackages create a new Servlet using below sample piece of code
 	
 ```java
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -37,7 +36,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 
 @WebServlet(urlPatterns = {"/helloworldservlet"})
 public class helloworldservlet extends HttpServlet {
@@ -56,8 +54,7 @@ public class helloworldservlet extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
-    }
- 
+    } 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -68,14 +65,12 @@ public class helloworldservlet extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
     }
-
     @Override
     public String getServletInfo() {
         return "Short description";
     }
 }
 ```
-
 * liste2
   * sous lise
   * sous liste2
