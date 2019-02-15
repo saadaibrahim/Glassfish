@@ -73,21 +73,53 @@ public class helloworldservlet extends HttpServlet {
   * Before deploying your application, you have to start GlassFish server.
     * Under "services", expand Servers, write click "GlassFish Server 4" and choose start.
     * Wait until the GlassFish start successfully, then deploy your application.
-  * To check if your application was built successfully, you can either check the Output Window result or check if your      application is added under glassfish -- Applications:
-    *![Image2](https://github.com/saadaibrahim/Glassfish/blob/master/pic2.png)
-  * sous liste2
-  
-  
-1. numer1
-1. number 2
-1. number 3
-   1.2 toto
-   1.3 titit
-   
-   
-
-
-> un encadré
-> de plus
-
-
+  * To check if your application was built successfully, you can either check the Output Window result or check if your      application is added under glassfish -- Applications:      
+    *![Image2](https://github.com/saadaibrahim/Glassfish/blob/master/pic2.png)  
+      
+ ## Starting the Administration Console 
+ To administer GlassFish Server and manage users, resources, and Java EE applications, use the Administration Console tool. 
+ GlassFish Server must be running before you invoke the Administration Console.
+ 1. To start the Administration Console, open a browser at: 
+> http://localhost:4848
+ 2. To Start the Administration Console Using NetBeans IDE
+  2.1 Click the Services tab.
+  2.2 Expand Servers.
+  2.3 Right-click the GlassFish Server instance and select View Domain Admin Console.
+  Note: NetBeans IDE uses your default web browser to open the Administration Console.
+ ![Image3](https://github.com/saadaibrahim/Glassfish/blob/master/pic3.png) 
+ 
+ ## Deploying an Application Using the Administration Console 
+ You can deploy applications by using the graphical Administration Console.
+ Before you begin, at least one GlassFish Server domain must be started before you deploy the sample application.
+ 1. Launch the Administration Console
+ 2. Click the Applications node in the tree on the left. 
+     The Applications page is displayed.
+ 3. Click the Deploy button.
+    The Deploy Applications or Modules page is displayed.
+ 4. Select Packaged File to be Uploaded to the Server, and click Browse.
+ 5. Navigate to the location in which you saved the helloworld.war sample, select the file, and click Open.
+    You are returned to the Deploy Applications or Modules page.
+ 6. Specify a description in the Description field, for example: HelloWorld-war
+ 7. Accept the other default settings, and click OK.
+    You are returned to the Applications page.
+ 8. Select the check box next to the hello application and click the Launch link to run the application.
+    The default URL for the application is:
+    > http://localhost:8080/HelloWorld-war/
+    ![Image4](https://github.com/saadaibrahim/Glassfish/blob/master/pic4.png)  
+    
+ ## To View Deployed Applications in the Administration Console
+ 1. Launch the Administration Console
+ 2. Click the Applications node in the tree on the left. 
+ Expand the node to list deployed applications. Deployed applications are also listed in the table on the Applications page.
+ 
+ ## To Undeploy the Sample Application Using the Administration Console
+ 1. Launch the Administration Console
+ 2. Click the Applications node in the tree on the left. 
+ The Applications page is displayed.
+ 3. Select the check box next to the HelloWorld sample application. 
+ 4. Remove or disable the application.
+   4.1 To remove the application, click the Undeploy button
+   4.2 To disable the application, click the Disable button.
+ 
+ >Refer to the Administration Console online help for additional information.
+ 
