@@ -69,9 +69,12 @@ public class helloworldservlet extends HttpServlet {
     }
 }
 ```
-* Deploy HelloWorld Application:
-  * 
-  * After saving your application, write click the parent node HelloWorld and choose clean and build, then check the result.
+* Deploy HelloWorld Application:  
+  * Before deploying your application, you have to start GlassFish server.
+    * Under "services", expand Servers, write click "GlassFish Server 4" and choose start.
+    * Wait until the GlassFish start successfully, then deploy your application.
+  * To check if your application was built successfully, you can either check the Output Window result or check if your      application is added under glassfish -- Applications:
+    *![Image2](https://github.com/saadaibrahim/Glassfish/blob/master/pic2.png)
   * sous liste2
   
   
