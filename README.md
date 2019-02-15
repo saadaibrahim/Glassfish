@@ -24,7 +24,7 @@ GlassFish Wiki:
 	1. Launch NetBeans IDE.
 	2. File --> New Project -- > Java EE --> Enterprise Application
 	3. ProjectName: HelloWorld
-	![Image1](Glassfish/PIC1.png)
+	![Image1](ISSAE/Glassfish/PIC1.png)
 	4. Expand HelloWorld-war and under SourcePackages create a new Servlet using below sample piece of code
 	
 ```java
