@@ -70,13 +70,15 @@ public class helloworldservlet extends HttpServlet {
     }
 }
 ```
+
 * Deploy HelloWorld Application:  
   * Before deploying your application, you have to start GlassFish server.  
     * Under "services", expand Servers, write click "GlassFish Server 4" and choose start.  
     * Wait until the GlassFish start successfully, then deploy your application.  
   * To check if your application was built successfully, you can either check the Output Window result or check if your      application is added under glassfish -- Applications:        
-    *![Image2](https://github.com/saadaibrahim/Glassfish/blob/master/pic2.png)  
-      
+    *![Image2](https://github.com/saadaibrahim/Glassfish/blob/master/pic2.png)   
+ 
+ 
  ## Starting the Administration Console 
  To administer GlassFish Server and manage users, resources, and Java EE applications, use the Administration Console tool. 
  GlassFish Server must be running before you invoke the Administration Console.
