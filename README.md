@@ -18,15 +18,14 @@ GlassFish tech tips master index:
 GlassFish Wiki:
  [Link](http://wiki.glassfish.java.net/)
  
-# What is GlassFish?
-
 # GlassFish Example: HelloWorld.java
 * Start by creating new JAVA EE application:
 	1. Launch NetBeans IDE.
 	2. File --> New Project -- > Java EE --> Enterprise Application
 	3. ProjectName: HelloWorld
 	![Image1](https://github.com/saadaibrahim/Glassfish/blob/master/PIC1.png)
-	4. Expand HelloWorld-war and under SourcePackages create a new Servlet using below sample piece of code: 	
+	4. Expand HelloWorld-war and under SourcePackages create a new Servlet using below sample piece of code: 
+	
 ```java
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -39,7 +38,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = {"/helloworldservlet"})
 public class helloworldservlet extends HttpServlet {
 
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    protected void processRequest(HttpServletRequest request, 
+                                 HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
@@ -49,18 +49,21 @@ public class helloworldservlet extends HttpServlet {
             out.println("<title>Hello World </title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Hello World at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Hello World at " + 
+	                   request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
     } 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void doGet(HttpServletRequest request, 
+                  HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest request, 
+                          HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
@@ -113,7 +116,8 @@ public class helloworldservlet extends HttpServlet {
  # To View Deployed Applications in the Administration Console
  1. Launch the Administration Console
  2. Click the Applications node in the tree on the left. 
- Expand the node to list deployed applications. Deployed applications are also listed in the table on the Applications page.
+ Expand the node to list deployed applications. 
+ Deployed applications are also listed in the table on the Applications page.
  
  # To Undeploy the Sample Application Using the Administration Console
  1. Launch the Administration Console
