@@ -10,7 +10,7 @@ Before proceeding with this tutorial, make sure all hardware and software requir
 [Installation Guide](https://docs.oracle.com/cd/E26576_01/doc.312/e24935/installing.htm#GSING00002)   
 [Download Glassfish](https://javaee.github.io/glassfish/download)
 
-## GlassFish Documentation
+# GlassFish Documentation
 GlassFish documentation: There is plenty of documentation which will help you to get started or to continue with using GlassFish.<br />
 Some of the most important:  
 GlassFish tech tips master index:
@@ -18,9 +18,9 @@ GlassFish tech tips master index:
 GlassFish Wiki:
  [Link](http://wiki.glassfish.java.net/)
  
-## What is GlassFish?
+# What is GlassFish?
 
-## GlassFish Example: HelloWorld.java
+# GlassFish Example: HelloWorld.java
 * Start by creating new JAVA EE application:
 	1. Launch NetBeans IDE.
 	2. File --> New Project -- > Java EE --> Enterprise Application
@@ -76,10 +76,10 @@ public class helloworldservlet extends HttpServlet {
     * Under "services", expand Servers, write click "GlassFish Server 4" and choose start.  
     * Wait until the GlassFish start successfully, then deploy your application.  
   * To check if your application was built successfully, you can either check the Output Window result or check if your      application is added under glassfish -- Applications:        
-    *![Image2](https://github.com/saadaibrahim/Glassfish/blob/master/pic2.png)   
+![Image2](https://github.com/saadaibrahim/Glassfish/blob/master/pic2.png)   
  
  
- ## Starting the Administration Console 
+ # Starting the Administration Console 
  To administer GlassFish Server and manage users, resources, and Java EE applications, use the Administration Console tool. 
  GlassFish Server must be running before you invoke the Administration Console.
  1. To start the Administration Console, open a browser at:   
@@ -89,9 +89,9 @@ public class helloworldservlet extends HttpServlet {
   2.2 Expand Servers.
   2.3 Right-click the GlassFish Server instance and select View Domain Admin Console.
   Note: NetBeans IDE uses your default web browser to open the Administration Console.  
- ![Image3](https://github.com/saadaibrahim/Glassfish/blob/master/pic3.png) 
+![Image3](https://github.com/saadaibrahim/Glassfish/blob/master/pic3.png) 
  
- ## Deploying an Application Using the Administration Console 
+ # Deploying an Application Using the Administration Console 
  You can deploy applications by using the graphical Administration Console.
  Before you begin, at least one GlassFish Server domain must be started before you deploy the sample application.
  1. Launch the Administration Console.  
@@ -108,14 +108,14 @@ public class helloworldservlet extends HttpServlet {
  8. Select the check box next to the hello application and click the Launch link to run the application.  
     The default URL for the application is:  
     > http://localhost:8080/HelloWorld-war/  
-    ![Image4](https://github.com/saadaibrahim/Glassfish/blob/master/pic4.png)    
+ ![Image4](https://github.com/saadaibrahim/Glassfish/blob/master/pic4.png)    
     
- ## To View Deployed Applications in the Administration Console
+ # To View Deployed Applications in the Administration Console
  1. Launch the Administration Console
  2. Click the Applications node in the tree on the left. 
  Expand the node to list deployed applications. Deployed applications are also listed in the table on the Applications page.
  
- ## To Undeploy the Sample Application Using the Administration Console
+ # To Undeploy the Sample Application Using the Administration Console
  1. Launch the Administration Console
  2. Click the Applications node in the tree on the left. 
  The Applications page is displayed.
