@@ -13,8 +13,7 @@ Before proceeding with this tutorial, make sure all hardware and software requir
 GlassFish documentation: There is plenty of documentation which will help you to get started or to continue with using GlassFish.<br />
 Some of the most important:  
 GlassFish tech tips master index:
- [Link](https://glassfish.dev.java.net/public/TipsandBlogs.html)
- 
+ [Link](https://glassfish.dev.java.net/public/TipsandBlogs.html)  
 GlassFish Wiki:
  [Link](http://wiki.glassfish.java.net/)
  
@@ -25,7 +24,7 @@ GlassFish Wiki:
 	1. Launch NetBeans IDE.
 	2. File --> New Project -- > Java EE --> Enterprise Application
 	3. ProjectName: HelloWorld
-	![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png
+	![Image1](https://octodex.github.com/images/yaktocat.png)
 	4. Expand HelloWorld-war and under SourcePackages create a new Servlet using below sample piece of code
 	
 ```java
