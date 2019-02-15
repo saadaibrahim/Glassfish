@@ -24,9 +24,8 @@ GlassFish Wiki:
 	1. Launch NetBeans IDE.
 	2. File --> New Project -- > Java EE --> Enterprise Application
 	3. ProjectName: HelloWorld
-	![Image1](ISSAE/Glassfish/PIC1.png)
-	4. Expand HelloWorld-war and under SourcePackages create a new Servlet using below sample piece of code
-	
+	![Image1](https://github.com/saadaibrahim/Glassfish/blob/master/PIC1.png)
+	4. Expand HelloWorld-war and under SourcePackages create a new Servlet using below sample piece of code:	
 ```java
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -70,8 +69,9 @@ public class helloworldservlet extends HttpServlet {
     }
 }
 ```
-* liste2
-  * sous lise
+* Deploy HelloWorld Application:
+  * 
+  * After saving your application, write click the parent node HelloWorld and choose clean and build, then check the result.
   * sous liste2
   
   
