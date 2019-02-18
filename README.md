@@ -7,9 +7,9 @@ Glassfish a deux versions: une gratuite avec code source ouvert et une autre com
 Ce tutoriel est destiné aux programmeurs qui sont destinés à développer et déployer des applications Java EE 7.
 
 # Prérequis  
-1. L'IDE Netbeans 8.0 [Netbeans Website](http://www.netbeans.org/)
-2. [Glassfish Installation Guide](https://docs.oracle.com/cd/E26576_01/doc.312/e24935/installing.htm#GSING00002)   
-3. [Glassfish Download Link](https://javaee.github.io/glassfish/download)
+L'IDE Netbeans 8.0 [Netbeans Website](http://www.netbeans.org/)  
+Pour installer le serveur Glassfish, installez simplement l'EDI Netbeans avec tous les composants.
+
 
 # La notion de domaine de Glassfish
 Un domaine est une notion très générale, qui ressemble à un espace de travail.
@@ -18,3 +18,10 @@ Un domaine admet:
  1. Un répertoire: $GLASSFISH_HOME/glassish/domains
  2. Un nom et un port pour l'administrateur: admin, 4848, ...etc
  3. Un port pour déployer l'application: 8080, 8081, ...etc.
+
+
+
+
+
+comment creer un domaine, supprimer un domaine, lancer un domaine,  arrêter un domaine, lister les domaines
+les aspects avances: la notion de domain, les pool de connexion, les utilisateurs, les realm pour les contexte d'application
