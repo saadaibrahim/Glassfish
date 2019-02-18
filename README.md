@@ -7,7 +7,7 @@ Glassfish a deux versions: une gratuite avec code source ouvert et une autre com
 Ce tutoriel est destiné aux programmeurs qui sont destinés à développer et déployer des applications Java EE 7.
 
 # Prérequis  
-L'IDE Netbeans 8.0 [Netbeans Website](http://www.netbeans.org/)  
+L'EDI Netbeans 8.0 [Netbeans Website](http://www.netbeans.org/)  
 Pour installer le serveur Glassfish, installez simplement l'EDI Netbeans avec tous les composants.
 
 
@@ -19,6 +19,7 @@ Un domaine admet:
  2. Un nom et un port pour l'administrateur: admin, 4848, ...etc
  3. Un port pour déployer l'application: 8080, 8081, ...etc.
 
+ ** 
 
 
 
