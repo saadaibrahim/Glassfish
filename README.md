@@ -36,5 +36,4 @@ Utilisez la sous-commande delete-domain pour supprimer un existant domaine exist
 >asadmin stop-domain domain1
 
 
-comment ,   lancer un domaine  lister les domaines
-les aspects avances: la notion de domain, les pool de connexion, les utilisateurs, les realm pour les contexte d'application
+les aspects avances:les pool de connexion, les utilisateurs, les realm pour les contexte d'application
