@@ -19,10 +19,18 @@ Un domaine admet:
  2. Un nom et un port pour l'administrateur: admin, 4848, ...etc
  3. Un port pour déployer l'application: 8080, 8081, ...etc.
 
- ** 
+ *Créer un domaine: 
+ La sous-commande create-domain crée un domaine avec un utilisateur administratif unique spécifié par l'option de l'utilitaire asadmin --user. 
+ Si l'option --user n'est pas spécifiée et que l'option --nopassword est définie sur true, 
+l'utilisateur administratif par défaut, admin, est utilisé.
+> create-domain --adminport 4848 domain1
+
+ *Supprimer un domaine:
+ Utilisez la sous-commande delete-domain pour supprimer un existant domaine existant. Seul l'utilisateur root ou l'utilisateur du système d'exploitation autorisé à administrer le domaine peut exécuter cette sous-commande.
+> delete-domain --domaindir ..\domains domain1
 
 
 
 
-comment creer un domaine, supprimer un domaine, lancer un domaine,  arrêter un domaine, lister les domaines
+comment ,   lancer un domaine  lister les domaines
 les aspects avances: la notion de domain, les pool de connexion, les utilisateurs, les realm pour les contexte d'application
