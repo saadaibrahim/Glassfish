@@ -35,5 +35,19 @@ Utilisez la sous-commande delete-domain pour supprimer un existant domaine exist
 * Arrêter un domaine:  
 >asadmin stop-domain domain1
 
+# Les Pool de connexions 
+Un pool de connexions est un stocker de connexions de base de données pouvant être utilisées pour se connecter à une base de données.
+Au lieu de créer une nouvelle connexion chaque fois que nécessaire, un pool de connexions est créé au démarrage de votre serveur d'applications.
+Ces connexions peuvent ensuite être utilisées et réutilisées. Lorsqu'une nouvelle connexion est requise, le pool recherche une connexion disponible. S'il en existe un, il est renvoyé au demandeur. Si l'une d'entre elles n'est pas disponible, une nouvelle connexion est établie en fonction du nombre de connexions déjà présentes dans le pool. 
+Une fois la connexion établie, elle est renvoyée au pool de connexions pour être utilisée par le demandeur suivant.
 
-les aspects avances:les pool de connexion, les utilisateurs, les realm pour les contexte d'application
+ * Créer un pool de connexion:  
+Une fois le serveur démarré, vous pouvez accéder à la console à l'adresse http://localhost:4848  
+Dans le panneau de gauche, accédez à Ressources - Pools de connexions JDBC-JDBC.  
+Cliquez sur Nouveau et entrez les valeurs suivantes: 
+ 1. Pool Name: testpool 
+ 2. Resource Type: javax.sql.DataSource 
+ 3. Driver Vendor: MySql 
+Cliquez sur Next, puis sur Finish à l'écran suivant, en acceptant les valeurs par défaut. 
+
+
