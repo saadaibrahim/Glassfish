@@ -57,17 +57,17 @@ Cliquez sur Nouveau et entrez les valeurs suivantes:
 # Glassfish Realms
 Glassfish gère les utilisateurs avec des "realms".  Un realm définit le support qui va contenir les informations sur les utilisateurs.
 Les principaux realms sont:
-1. file:  enregistre les informations dans un fichier. Il s'agit du domaine par défaut lors de la première installation du serveur GlassFish. 
-1.1. Accéder à la console à l'adresse http://localhost:4848 
-1.2. Ouvrez l'entrée "Configurations > server-config > Sécurité > Domaines" et cliquez sur "file" 
-1.3. Une page "Modifier le domaine" s'affiche. Cliquez sur "Gérer les utilisateurs". Dans la nouvelle page, cliquez sur le bouton "Nouveau". 
-1.4. Créez les utilisateurs.  
-2. jdbc:  enregistre les informations dans une base de données.
-1.1. Il faut commencer par créer les tables relationnelles qui vont conserver les informations sur les utilisateurs.  
-1.2. Dans NetBeans, onglet Services > Databases, clic droit sur l'entrée Java DB et "Create Database" pour créer une nouvelle base de données "sample". 
-      Une nouvelle entrée "jdbc:oracle:thin:@localhost:1521:sample" a dû être créée.
-1.3. Créez les tables dans le schéma associé à l'utilisateur: clic droit sur le nom du schéma et "Execute Command" et copiez la commande SQL qui crée les tables en les séparant par un ";".
-1.4.  
+1. file:  enregistre les informations dans un fichier. Il s'agit du domaine par défaut lors de la première installation du serveur GlassFish.   
+  1.1 Accéder à la console à l'adresse http://localhost:4848        
+  1.2 Ouvrez l'entrée "Configurations > server-config > Sécurité > Domaines" et cliquez sur "file"          
+  1.3 Une page "Modifier le domaine" s'affiche. Cliquez sur "Gérer les utilisateurs". Dans la nouvelle page, cliquez sur le       bouton "Nouveau".      
+  1.4. Créez les utilisateurs.       
+2. jdbc:  enregistre les informations dans une base de données.    
+   1.1 Il faut commencer par créer les tables relationnelles qui vont conserver les informations sur les utilisateurs.      
+   1.2 Dans NetBeans, onglet Services > Databases, clic droit sur l'entrée Java DB et "Create Database" pour créer une nouvelle base de données "sample".         
+      Une nouvelle entrée "jdbc:oracle:thin:@localhost:1521:sample" a dû être créée.       
+   1.3 Créez les tables dans le schéma associé à l'utilisateur: clic droit sur le nom du schéma et "Execute Command" et copiez la commande SQL qui crée les tables en les séparant par un ";".   
+   1.4            
 3. ldap:  les informations sont dans un annuaire LDAP.  
 
  
