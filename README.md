@@ -50,9 +50,9 @@ Cliquez sur Nouveau et entrez les valeurs suivantes:
  3. Nom de la classe de la source de données:  oracle.jdbc.pool.OracleDataSource
  4. Ajouter les propriétés suivantes: DatabaseName, User, Password, URL, PortNumber, serverName.
       jdbc:oracle:thin:@localhost:1521:sample
- 5. Créer une source de données: Ressources ; clic sur Ressources JDBC ; clic sous Nouveau. 
-	     Nom JNDI : jdbc/sample 
-      Nom du pool : Sample.
+ 5. Créer une source de données: Ressources ; clic sur Ressources JDBC ; clic sous Nouveau.  
+ Nom JNDI : jdbc/sample     
+ Nom du pool : Sample     
 
 # Glassfish Realms
 Glassfish gère les utilisateurs avec des "realms".  Un realm définit le support qui va contenir les informations sur les utilisateurs.
