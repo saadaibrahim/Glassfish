@@ -47,7 +47,8 @@ Dans le panneau de gauche, accédez à Ressources - Pools de connexions JDBC-JDB
 Cliquez sur Nouveau et entrez les valeurs suivantes: 
  1. Pool Name: testpool 
  2. Resource Type: javax.sql.DataSource 
- 3. Driver Vendor: MySql 
+ 3. Driver Vendor: MySql  
 Cliquez sur Next, puis sur Finish à l'écran suivant, en acceptant les valeurs par défaut. 
 
+# Glassfish Realms 
 
