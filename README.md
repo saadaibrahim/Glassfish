@@ -58,6 +58,16 @@ Cliquez sur Nouveau et entrez les valeurs suivantes:
 Un realm est un domaine de sécurité défini pour un serveur Web ou un serveur d'applications.  
 Un domaine contient une collection d'utilisateurs, qui peuvent ou non être affectés à un groupe.  
 La gestion des utilisateurs sur le serveur GlassFish est décrite dans la section Gestion des utilisateurs et des groupes sur le serveur GlassFish. 
+ **Utilisateur** 
+    Un utilisateur est une personne définie dans le serveur GlassFish. Dans une application Web, un utilisateur peut être associé à un ensemble de rôles lui donnant le droit d'accéder à toutes les ressources par ces rôles. Les utilisateurs peuvent être associés à un groupe.
+    
+ **Groupe**
+    Un groupe sur le serveur GlassFish est une catégorie d'utilisateurs classés par caractéristiques communes, telles que le titre du poste ou le profil du client. Par exemple, la plupart des clients d’une application de commerce électronique peuvent appartenir au groupe CLIENT, mais les gros utilisateurs appartiennent au groupe PRÉFÉRÉ.  
+    
+ **Role**
+    Un groupe sur le serveur GlassFish est différent d'un rôle. Un groupe est désigné pour l'ensemble du serveur GlassFish, tandis qu'un rôle est associé uniquement à une application spécifique du serveur GlassFish.   
+Un rôle est un nom pour l'autorisation d'accéder à un ensemble particulier de ressources dans une application. Un rôle peut être comparé à une clé pouvant ouvrir un verrou. 
+
 Les principaux realms sont:
 1. file:  enregistre les informations dans un fichier. Il s'agit du domaine par défaut lors de la première installation du serveur GlassFish.   
     - Accéder à la console à l'adresse http://localhost:4848        
@@ -68,8 +78,7 @@ Les principaux realms sont:
     - Il faut commencer par créer les tables relationnelles qui vont conserver les informations sur les utilisateurs.      
     - Dans NetBeans, onglet Services > Databases, clic droit sur l'entrée Java DB et "Create Database" pour créer une nouvelle base de données "sample".         
       Une nouvelle entrée "jdbc:oracle:thin:@localhost:1521:sample" a dû être créée.       
-    - Créez les tables dans le schéma associé à l'utilisateur: clic droit sur le nom du schéma et "Execute Command" et copiez la commande SQL qui crée les tables en les séparant par un ";".   
-    -            
+    - Créez les tables dans le schéma associé à l'utilisateur: clic droit sur le nom du schéma et "Execute Command" et copiez la commande SQL qui crée les tables en les séparant par un ";".              
 3. ldap:  les informations sont dans un annuaire LDAP.  
 
  
