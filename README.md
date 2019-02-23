@@ -57,16 +57,16 @@ Cliquez sur Nouveau et entrez les valeurs suivantes:
 # Glassfish Realms
 Un realm est un domaine de sécurité défini pour un serveur Web ou un serveur d'applications.  
 Un domaine contient une collection d'utilisateurs, qui peuvent ou non être affectés à un groupe.  
-La gestion des utilisateurs sur le serveur GlassFish est décrite dans la section Gestion des utilisateurs et des groupes sur le serveur GlassFish. 
- **Utilisateur** 
-    Un utilisateur est une personne définie dans le serveur GlassFish. Dans une application Web, un utilisateur peut être associé à un ensemble de rôles lui donnant le droit d'accéder à toutes les ressources par ces rôles. Les utilisateurs peuvent être associés à un groupe.
+La gestion des utilisateurs sur le serveur GlassFish est décrite dans la section Gestion des utilisateurs et des groupes sur le serveur GlassFish.<br/>         
+ **Utilisateur** <br/>     
+    Un utilisateur est une personne définie dans le serveur GlassFish. Dans une application Web, un utilisateur peut être associé à un ensemble de rôles lui donnant le droit d'accéder à toutes les ressources par ces rôles. Les utilisateurs peuvent être associés à un groupe.<br/>      
     
- **Groupe**
-    Un groupe sur le serveur GlassFish est une catégorie d'utilisateurs classés par caractéristiques communes, telles que le titre du poste ou le profil du client. Par exemple, la plupart des clients d’une application de commerce électronique peuvent appartenir au groupe CLIENT, mais les gros utilisateurs appartiennent au groupe PRÉFÉRÉ.  
+ **Groupe** <br/>     
+    Un groupe sur le serveur GlassFish est une catégorie d'utilisateurs classés par caractéristiques communes, telles que le titre du poste ou le profil du client. Par exemple, la plupart des clients d’une application de commerce électronique peuvent appartenir au groupe CLIENT, mais les gros utilisateurs appartiennent au groupe PRÉFÉRÉ.<br/>       
     
- **Role**
+ **Role** <br/>       
     Un groupe sur le serveur GlassFish est différent d'un rôle. Un groupe est désigné pour l'ensemble du serveur GlassFish, tandis qu'un rôle est associé uniquement à une application spécifique du serveur GlassFish.   
-Un rôle est un nom pour l'autorisation d'accéder à un ensemble particulier de ressources dans une application. Un rôle peut être comparé à une clé pouvant ouvrir un verrou. 
+Un rôle est un nom pour l'autorisation d'accéder à un ensemble particulier de ressources dans une application. Un rôle peut être comparé à une clé pouvant ouvrir un verrou.<br/>        
 
 Les principaux realms sont:
 1. file:  enregistre les informations dans un fichier. Il s'agit du domaine par défaut lors de la première installation du serveur GlassFish.   
