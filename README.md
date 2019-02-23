@@ -96,8 +96,10 @@ GlassFish Wiki:
  * Créer une nouvelle application JAVA EE:
  1. Lancez l'EDI NetBeans.
  2. File --> New Project -- > Java EE --> Enterprise Application
- 3. ProjectName: HelloWorld
-  ![Image1] (https://github.com/saadaibrahim/Glassfish/blob/master/PIC1.png)
+ 3. ProjectName: HelloWorld   
+ 
+  ![Image1](https://github.com/saadaibrahim/Glassfish/blob/master/PIC1.png)   
+  
  4. Développez HelloWorld-war et, sous SourcePackages, créez un nouveau Servlet en utilisant un exemple de code ci-dessous:
 
  ```java
@@ -152,8 +154,40 @@ public class helloworldservlet extends HttpServlet {
    * Avant de déployer votre application, vous devez démarrer le serveur GlassFish.
    * Sous "services", développez Serveurs, écrivez, cliquez sur "GlassFish Server 4" et choisissez Démarrer.
    * Attendez que GlassFish démarre correctement, puis déployez votre application.
-   * Pour vérifier si votre application a été construite avec succès, vous pouvez vérifier 'Output Window result' ou vérifier si votre application est ajoutée sous glassfish - Applications:
- ![Image2] (https://github.com/saadaibrahim/Glassfish/blob/master/pic2.png)   
+   * Pour vérifier si votre application a été construite avec succès, vous pouvez vérifier 'Output Window result' ou vérifier si votre application est ajoutée sous glassfish - Applications:  
+   
+ ![Image2](https://github.com/saadaibrahim/Glassfish/blob/master/pic2.png)   
+ 
+ # Déploiement d'une application à l'aide de la console d'administration:   
+  Vous pouvez déployer des applications à l'aide de la console d'administration graphique.   
+  Avant de commencer, vous devez au moins démarrer un domaine de serveur GlassFish avant de déployer l'exemple d'application.  
+  1. Lancez la console d'administration.  
+  2. Cliquez sur le noeud Applications à gauche. 
+  3. Cliquez sur le bouton Déployer. 
+  4. Sélectionnez 'Packaged File' à, puis cliquez sur 'Browse'.  
+  5. Accédez à l'emplacement dans lequel vous avez enregistré l'exemple helloworld.war, sélectionnez le fichier et cliquez sur Ouvrir.  
+  6. Spécifiez une description par exemple: HelloWorld-war.   
+  7. Acceptez les autres paramètres par défaut et cliquez sur OK.   
+  8. Cochez la case en regard de l'application hello, puis cliquez sur le lien Lancer pour exécuter l'application.  
+  L'URL par défaut de l'application est:    
+   > http://localhost:8080/HelloWorld-war/  
+   
+   ![Image4](https://github.com/saadaibrahim/Glassfish/blob/master/pic4.png)    
+   
+   # Pour afficher les applications déployées:   
+   1. Lancez la console d'administration 
+   2. Cliquez sur le noeud Applications à gauche. 
+    Les applications déployées sont également répertoriées dans le tableau de la page Applications. 
+    
+   # Pour annuler le déploiement des applications:
+   1. Lancez la console d'administration 
+   2. Cliquez sur le noeud Applications à gauche. 
+   3. Cochez la case en regard de l'exemple d'application HelloWorld. 
+   4. Supprimez ou désactivez l'application. 
+          4.1 Pour supprimer l'application, cliquez sur le bouton Annuler le déploiement. 
+	  4.2 Pour désactiver l'application, cliquez sur le bouton Désactiver.  
+	  
+> Consultez l'aide en ligne de la console d'administration pour plus d'informations.
 
  
 
