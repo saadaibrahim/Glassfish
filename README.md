@@ -57,6 +57,7 @@ Cliquez sur Nouveau et entrez les valeurs suivantes:
 # Glassfish Realms
 Un realm est un domaine de sécurité défini pour un serveur Web ou un serveur d'applications.  
 Un domaine contient une collection d'utilisateurs, qui peuvent ou non être affectés à un groupe.  
+Le realm peut contenir les mots de passe de ses utilisateurs et leurs groupes d'appartenance.
 La gestion des utilisateurs sur le serveur GlassFish est décrite dans la section Gestion des utilisateurs et des groupes sur le serveur GlassFish.<br/>         
  **Utilisateur** <br/>     
     Un utilisateur est une personne définie dans le serveur GlassFish. Dans une application Web, un utilisateur peut être associé à un ensemble de rôles lui donnant le droit d'accéder à toutes les ressources par ces rôles. Les utilisateurs peuvent être associés à un groupe.<br/>      
@@ -80,6 +81,8 @@ Les principaux realms sont:
       Une nouvelle entrée "jdbc:oracle:thin:@localhost:1521:sample" a dû être créée.       
     - Créez les tables dans le schéma associé à l'utilisateur: clic droit sur le nom du schéma et "Execute Command" et copiez la commande SQL qui crée les tables en les séparant par un ";".              
 3. ldap:  les informations sont dans un annuaire LDAP.  
+
+![Imagerealm](https://github.com/saadaibrahim/Glassfish/blob/master/glassfish_new_realm.png)
 
  
 
