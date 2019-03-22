@@ -1,10 +1,10 @@
 # GlassFish
 GlassFish est un serveur d'applications compatible Java EE. C'est l'implémentation de référence Java EE développé par Oracle-Sun. 
-Glassfish est un server Web comme "Tomcat" et "Weblogic". Il permet de déployer des applications web écrites sur Java. 
+Glassfish est un serveur Web comme "Tomcat" et "Weblogic". Il permet de déployer des applications web écrites sur Java. 
 Glassfish a deux versions: une gratuite avec code source ouvert et une autre commerciale.
 
 # Audience
-Ce tutoriel est destiné aux programmeurs qui sont destinés à développer et déployer des applications Java EE 7.
+Ce tutoriel est destiné aux programmeurs qui vont développer et déployer des applications Java EE 7.
 
 # Prérequis  
 L'EDI Netbeans 8.0 [Netbeans Website](http://www.netbeans.org/)  
@@ -26,7 +26,7 @@ l'utilisateur administratif par défaut, admin, est utilisé.
 > create-domain --adminport 4848 domain1
 
  * Supprimer un domaine:   
-Utilisez la sous-commande delete-domain pour supprimer un existant domaine existant. Seul l'utilisateur root ou l'utilisateur du système d'exploitation autorisé à administrer le domaine peut exécuter cette sous-commande.
+Utilisez la sous-commande delete-domain pour supprimer un existant domaine. Seul l'utilisateur root ou l'utilisateur du système d'exploitation autorisé à administrer le domaine peut exécuter cette sous-commande.
 > delete-domain --domaindir ..\domains domain1
 
 * Lancer un domaine: 
@@ -50,7 +50,7 @@ Cliquez sur Nouveau et entrez les valeurs suivantes:
  3. Nom de la classe de la source de données:  oracle.jdbc.pool.OracleDataSource
  4. Ajouter les propriétés suivantes: DatabaseName, User, Password, URL, PortNumber, serverName.
       jdbc:oracle:thin:@localhost:1521:sample
- 5. Créer une source de données: Ressources ; clic sur Ressources JDBC ; clic sous Nouveau.  
+ 5. Créer une source de données: Ressources ; clique sur Ressources JDBC ; clique sous Nouveau.  
  Nom JNDI : jdbc/sample     
  Nom du pool : Sample     
 
@@ -77,9 +77,9 @@ Les principaux realms sont:
     - Créez les utilisateurs.       
 2. jdbc:  enregistre les informations dans une base de données.    
     - Il faut commencer par créer les tables relationnelles qui vont conserver les informations sur les utilisateurs.      
-    - Dans NetBeans, onglet Services > Databases, clic droit sur l'entrée Java DB et "Create Database" pour créer une nouvelle base de données "sample".         
+    - Dans NetBeans, onglet Services > Databases, cliquez droit sur l'entrée Java DB et "Create Database" pour créer une nouvelle base de données "sample".         
       Une nouvelle entrée "jdbc:oracle:thin:@localhost:1521:sample" a dû être créée.       
-    - Créez les tables dans le schéma associé à l'utilisateur: clic droit sur le nom du schéma et "Execute Command" et copiez la commande SQL qui crée les tables en les séparant par un ";".              
+    - Créez les tables dans le schéma associé à l'utilisateur: cliquez droit sur le nom du schéma et "Execute Command" et copiez la commande SQL qui crée les tables en les séparant par un ";".              
 3. ldap:  les informations sont dans un annuaire LDAP.  
 
 ![Imagerealm](https://github.com/saadaibrahim/Glassfish/blob/master/glassfish_new_realm.png)
@@ -164,7 +164,7 @@ public class helloworldservlet extends HttpServlet {
   1. Lancez la console d'administration.  
   2. Cliquez sur le noeud Applications à gauche. 
   3. Cliquez sur le bouton Déployer. 
-  4. Sélectionnez 'Packaged File' à, puis cliquez sur 'Browse'.  
+  4. Sélectionnez 'Packaged File', puis cliquez sur 'Browse'.  
   5. Accédez à l'emplacement dans lequel vous avez enregistré l'exemple helloworld.war, sélectionnez le fichier et cliquez sur Ouvrir.  
   6. Spécifiez une description par exemple: HelloWorld-war.   
   7. Acceptez les autres paramètres par défaut et cliquez sur OK.   
